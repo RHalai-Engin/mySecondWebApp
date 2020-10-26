@@ -1,0 +1,99 @@
+<%-include  partials/header.ejs %>
+
+
+<%-include  partials/main_nav.ejs %>  
+
+<!-- Main Content-->
+<Main class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome To My <%= title %> Page</h1>
+      <% if (title == "Home") {%>
+        <br>
+            <img src="Assets/images/home.jpg" alt="guy in suit" style="float:center" width = "360" height="270" >
+            <h3><br><p>I am passionate about building excellent softwares that improve the lives of those around me.
+            I am here to learn how to become specialize in creating softwares for clients ranging from individuals 
+            and small-businesses all the way to large enterprise corporations.</p></h3>
+          <%} %>
+      <% if (title == "About") {%>
+            <p><h4>Hello! I am Rajan Halai. I am from India but i was in Kenya for last couple of years.
+              I came to canada in 2019 for further studies. I am studying software engineering at Centennial college.
+              I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.
+              My goal is to always build products that provide pixel-perfect, performant experiences. I am also interested in Cyber 
+              security and learned little while i was in Kenya and curious to know more about it.<h4></p>
+              <img src="./Assets/images/My College.jpeg" alt="My College" style="float:center" width = "380" height="270" >
+            <% } %>
+      <% if (title == "Projects") {%>
+            <p><h4>Here, you will find out my current learning objectives and future plans to work as software engineer.</h4></p>
+            <h1>1) Buiding websites</h1>
+            <br>
+            <p><h5>I have stated creating web sites since i have joined this course using HTML5, CSS3, JavaScript.</h5></p>
+            <p><img src="./Assets/images/project2.jpg" alt="Web Development" style="float:center" width = "380" height="270" ></p>
+            <p><h5>As i am moving further, i have started learning how to develop web application using ExpressJS, Node modules,
+            MongoDB, and many more. This website is one of the example and part of what i would like to build as a Software Engineer.</h5></p>
+            <h1>2) Build, Develop and Manage Softwares</h1>
+            <p><img src="./Assets/images/project.jpg" alt="software Development" style="float:center" width = "380" height="270" ></p>
+            <p><h5>My goal is to reach out to my maximum potentials and grab all the good oportunities on the way to my career.
+            I want to get titled as the best software engineer as studying, building, developing and managing softwares.<h5></p>
+          <%} %>
+      <% if (title == "Services") {%>
+            <br><h1>My Study Highlights</h1>
+            <br><h4>Let me show you how far i've come</h4> 
+            <br><p><h5>I am ready to comprehend and utilize the following languages: 
+            <B>HTML, CSS, JavaScript, C#, C, C++, SQL, Python, Java.</B>
+            I have been using these languages to build websites, web application, to manipulate databases,
+            build applications for single platform and multiple-platforms as well. I am also learning 
+            how to build Front-End and Back-End applications.<h5></p>
+            <p><h5>I am proficient using Linux operating system and have enough knowledge of cybersecurity.</h5></p>
+            <p><img src="./Assets/images/services.png" alt="Programming languages" style="float:center" width = "450" height="270" ></p>
+
+      <%} %>
+      <% if (title == "Contact") {%>
+      <div class="row justify-content-md-center">
+        <div class="col lg 8 col md 8 col sm 10 col xs 10">
+        <form>
+          <div class="form-group">
+            <label for="firstName"> First Name</label>
+            <input type="text" class="form-control" id="firstName" aria-describedby="firstName" 
+            name="firstName" placeholder="Enter Your First Name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" aria-describedby="lastName" 
+            name="lastName" placeholder="Enter Your Last Name"required>
+          </div>
+
+          <div class="form-group">
+            <label for="emailAddress">Email address</label>
+            <input type="email" class="form-control" id="emailAddress" aria-describedby="emailAddress" 
+            name="emailAddress" placeholder="Example@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contactNumber">Contact Number</label>
+            <input type="tel" class="form-control" id="contactNumber" aria-describedby="contactNumber" 
+            name="contactNumber" placeholder="111-234-5567" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Suggestions</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Any suggestions..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-lg btn-primary"  id="sendButton"><i class="fas fa-lg fa-paper-plane"></i> Send</button>
+          <button type="reset" class="btn btn-lg btn-warning" id="resetButton"><i class="fas fa-undo"></i> Cancel</button>
+      </form>
+    </div>
+  </div>
+    <%} %>
+ </div>
+</Main>
+
+<%-include  partials/bottom_nav.ejs %>  
+
+<%-include  partials/footer.ejs %>
+
+
+
+
+
+
