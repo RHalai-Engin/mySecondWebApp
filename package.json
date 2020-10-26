@@ -38,6 +38,15 @@
     "@types/passport": "^1.0.4",
     "@types/passport-local": "^1.0.33",
     "@types/passport-local-mongoose": "^4.0.13"
-  }
-
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RHalai-Engin/mySecondWebApp.git"
+  },
+  "author": "Rajan Halai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RHalai-Engin/mySecondWebApp/issues"
+  },
+  "homepage": "https://github.com/RHalai-Engin/mySecondWebApp#readme"
 }
