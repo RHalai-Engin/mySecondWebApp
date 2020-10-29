@@ -48,5 +48,5 @@
   "bugs": {
     "url": "https://github.com/RHalai-Engin/mySecondWebApp/issues"
   },
-  "homepage": "https://github.com/RHalai-Engin/mySecondWebApp#readme"
+  "homepage": "index.ejs"
 }
